@@ -32,6 +32,9 @@
 void get_message( String* message );
 void send_ack( char* ack_type );
 bool wait_for_next_message( char* answer, uint32_t timeout, char *message_content );
+bool wait_for_next_message( char* answer, uint32_t timeout );
 void pars_message( String message, char* message_header, char* message_content ); 
+void send_message( char* header, char* message_content );
+void send_message( char* header );
 
 #endif

@@ -9,7 +9,7 @@ void logtrace_print(uint8_t level, const char* format,...){
   }
   
   char buf[MAX_BUFFER];
-  memset(buf,0,MAX_BUFFER);
+  memset( buf,0, MAX_BUFFER);
 
   if( level <= TRACE_LVL )
   {
